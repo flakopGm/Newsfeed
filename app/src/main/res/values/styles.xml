@@ -1,0 +1,205 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RelativesSimilars">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearSimilar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">69dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BotonesBusqueda">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">69dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ViewVertical">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="ViewHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_below">@id/botones_busqueda</item>
+    </style>
+
+    <style name="LinearUltimasNoticias">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/view_botones_busqueda</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BotonUltimasNoticias">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="IconoAtrasUltimasNoticias">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@drawable/ic_arrow_back_white_18dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="IconoAtrasBusquedas">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:src">@drawable/ic_arrow_back_white_18dp</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:hint">@string/hint</item>
+    </style>
+
+    <style name="IconoBuscar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:src">@drawable/ic_search_white_18dp</item>
+    </style>
+
+    <style name="IconoBorrar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:src">@drawable/ic_delete_white_18dp</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/ultimas_noticias_container</item>
+        <item name="android:divider">@color/colorPrimaryDark</item>
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ImagenFondo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/ultimas_noticias_container</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/reeding</item>
+    </style>
+
+    <style name="TextEmptyView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/ultimas_noticias_container</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TituloNoticia">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAppearance">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Title
+        </item>
+    </style>
+
+    <style name="TipoNoticia">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/titulo</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">
+            @style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle
+        </item>
+    </style>
+
+    <style name="SeccionNoticia">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tipo_noticia</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">
+            @style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle
+        </item>
+    </style>
+
+    <style name="FechaPublicacion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textAppearance">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Subtitle
+        </item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_below">@id/seccion_noticia</item>
+    </style>
+
+    <style name="IconoSeccion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/titulo</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

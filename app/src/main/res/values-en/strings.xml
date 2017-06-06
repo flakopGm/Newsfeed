@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">News feed</string>
+    <string name="buscar_por_noticias">SEARCH NEWS</string>
+    <string name="buscar_por_seccion">SEARCH BY SECTION</string>
+    <string name="compruebe_conexion">CHECK YOUR INTERNET CONNECTION</string>
+    <string name="error">:( Something went wrong, try to refresh the search ...</string>
+    <string name="hint">Your search here</string>
+    <string name="info">CLICK FOR MORE INFORMATION</string>
+    <string name="no_resultados">NO NEWS RELATED TO YOUR SEARCH CRITERION</string>
+    <string name="ultimas_noticias">LAST NEWS</string>
+</resources>

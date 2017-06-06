@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativesSimilars">
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/TituloNoticia" />
+
+    <TextView
+        android:id="@+id/tipo_noticia"
+        style="@style/TipoNoticia" />
+
+    <TextView
+        android:id="@+id/seccion_noticia"
+        style="@style/SeccionNoticia" />
+
+    <TextView
+        android:id="@+id/fecha_Publicacion"
+        style="@style/FechaPublicacion" />
+
+    <ImageView
+        android:id="@+id/image_seccion"
+        style="@style/IconoSeccion" />
+</RelativeLayout>

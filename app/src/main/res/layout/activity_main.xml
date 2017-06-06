@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativesSimilars">
+
+    <!-- Botones buscar noticias por criterio. -->
+    <LinearLayout
+        android:id="@+id/botones_busqueda"
+        style="@style/LinearSimilar">
+
+        <TextView
+            android:id="@+id/busqueda_palabra"
+            style="@style/BotonesBusqueda"
+            android:textColor="@color/porPalabra" />
+
+        <View style="@style/ViewVertical" />
+
+        <TextView
+            android:id="@+id/busqueda_seccion"
+            style="@style/BotonesBusqueda"
+            android:layout_toRightOf="@id/busqueda_palabra"
+            android:textColor="@color/porSeccion" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_botones_busqueda"
+        style="@style/ViewHorizontal" />
+
+    <!-- Últimas Noticias. -->
+    <LinearLayout
+        android:id="@+id/ultimas_noticias_container"
+        style="@style/LinearUltimasNoticias">
+
+        <ImageView
+            android:id="@+id/atrasPrincipal"
+            style="@style/IconoAtrasUltimasNoticias" />
+
+        <TextView
+            android:id="@+id/ultimas_noticias"
+            style="@style/BotonUltimasNoticias"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+    <!-- Iconos de busqueda, borrar y regreso a la pantalla principal. -->
+    <LinearLayout
+        android:id="@+id/busqueda_feed"
+        style="@style/LinearSimilar"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/atras"
+            style="@style/IconoAtrasBusquedas" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            style="@style/EditText" />
+
+        <ImageView
+            android:id="@+id/icono_busqueda"
+            style="@style/IconoBuscar" />
+
+        <ImageView
+            android:id="@+id/icono_borrar"
+            style="@style/IconoBorrar" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/actualizador_noticias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ultimas_noticias_container">
+
+        <ListView
+            android:id="@+id/list"
+            style="@style/ListView"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="@style/ProgressBar" />
+
+    <ImageView
+        android:id="@+id/foto_fondo"
+        style="@style/ImagenFondo" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        style="@style/TextEmptyView" />
+
+</RelativeLayout>

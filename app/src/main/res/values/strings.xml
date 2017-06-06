@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">News feed</string>
+    <string name="buscar_por_noticias">BUSCAR NOTICIAS</string>
+    <string name="buscar_por_seccion">BUSCAR POR SECCIÓN</string>
+    <string name="ultimas_noticias">ÚLTIMAS NOTICIAS</string>
+    <string name="hint">Su búsqueda aquí</string>
+    <string name="error">:( Algo a salido mal, intente refrescar la búsqueda...</string>
+    <string name="compruebe_conexion">COMPRUEBE SU CONEXION A INTERNET</string>
+    <string name="no_resultados">NO SE HAN ENCONTRADO NOTICIAS RELACIONADAS CON SU CRITERIO DE
+        BUSQUEDA</string>
+    <string name="info">CLICK PARA MÁS INFORMACIÓN</string>
+</resources>
